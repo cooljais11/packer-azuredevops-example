@@ -18,6 +18,9 @@
    	"resource_group_name": "{{user `resource_group`}}",
     "storage_account": "{{user `storage_account`}}",
     
+    "capture_container_name": "images",
+    "capture_name_prefix": "packer",
+    
     "os_type": "Linux",
     "image_publisher": "Canonical",
     "image_offer": "UbuntuServer",
