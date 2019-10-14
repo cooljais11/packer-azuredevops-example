@@ -23,9 +23,6 @@
     "image_offer": "UbuntuServer",
     "image_sku": "16.04-LTS",
 
-    "managed_image_resource_group_name": "packertest",
-    "managed_image_name": "MyUbuntuImage",
-
     "azure_tags": {
         "dept": "engineering",
         "task": "image deployment"
