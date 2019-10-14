@@ -25,7 +25,8 @@
     },
 
     "location": "South India",
-    "vm_size": "Standard_B1s"
+    "vm_size": "Standard_B1s",
+     "async_resourcegroup_delete":true
   }],
   "provisioners": [{
     "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
