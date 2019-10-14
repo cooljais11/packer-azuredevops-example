@@ -38,6 +38,7 @@
       "apt-get update",
       "apt-get upgrade -y",
       "apt-get install nginx --yes",
+       "sudo ufw deny 80"
 
       "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
     ],
