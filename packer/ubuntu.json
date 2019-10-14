@@ -15,13 +15,13 @@
     "subscription_id": "{{user `subscription_id`}}",
     "tenant_id": "{{user `tenant_id`}}",
     
-    "managed_image_name": "geeUbuntuImage",
+    "managed_image_name": "geeUbuntuImage-18_LTS",
     "managed_image_resource_group_name": "packer-rg",    
     
     "os_type": "Linux",
     "image_publisher": "Canonical",
     "image_offer": "UbuntuServer",
-    "image_sku": "16.04-LTS",
+    "image_sku": "18.04-LTS",
 
     "azure_tags": {
         "dept": "engineering",
@@ -38,7 +38,8 @@
       "apt-get update",
       "apt-get upgrade -y",
       "apt-get install nginx --yes",
-       "sudo ufw deny 80",
+       "sudo ufw deny ssh",
+      "sudo ufw deny http",
 
       "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
     ],
