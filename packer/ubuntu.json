@@ -16,7 +16,7 @@
     "tenant_id": "{{user `tenant_id`}}",
     
     "managed_image_name": "geeUbuntuImage",
-    "managed_image_resource_group_name": "packer-rg"    
+    "managed_image_resource_group_name": "packer-rg",    
     
     "os_type": "Linux",
     "image_publisher": "Canonical",
