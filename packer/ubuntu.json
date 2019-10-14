@@ -15,11 +15,8 @@
     "subscription_id": "{{user `subscription_id`}}",
     "tenant_id": "{{user `tenant_id`}}",
     
-   	"resource_group_name": "{{user `resource_group_name`}}",
-    "storage_account": "{{user `storage_account`}}",
-    
-    "capture_container_name": "images",
-    "capture_name_prefix": "packer",
+    "managed_image_name": "geeUbuntuImage",
+    "managed_image_resource_group_name": "packer-rg"    
     
     "os_type": "Linux",
     "image_publisher": "Canonical",
