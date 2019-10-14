@@ -24,7 +24,7 @@
         "task": "image deployment"
     },
 
-    "location": "Central India",
+    "location": "South India",
     "vm_size": "Standard_B1s"
   }],
   "provisioners": [{
