@@ -10,7 +10,11 @@
     "client_id": "{{user `client_id`}}",
     "client_secret": "{{user `client_secret`}}",
     "subscription_id": "{{user `subscription_id`}}",
-
+    "tenant_id": "{{user `tenant_id`}}",
+    
+   	"resource_group_name": "packer-rg",
+    "storage_account": "geepackerstorage",
+    
     "os_type": "Linux",
     "image_publisher": "Canonical",
     "image_offer": "UbuntuServer",
