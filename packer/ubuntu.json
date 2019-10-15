@@ -38,19 +38,12 @@
       "apt-get update",
       "apt-get upgrade -y",
       "apt-get install nginx --yes",
-      "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
-    ],
-    "inline_shebang": "/bin/sh -x",
-    "type": "shell"
-  },
- {
-    "type": "shell",
-    "inline_shebang": "/bin/sh -x",
-    "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
-    "inline": [
+      "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync",
       "ufw enable",
       "ufw deny 22",
       "ufw deny http"
-    ]
+    ],
+    "inline_shebang": "/bin/sh -x",
+    "type": "shell"
   }]
 }
