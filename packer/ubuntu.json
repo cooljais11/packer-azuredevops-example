@@ -39,7 +39,8 @@
       "apt-get upgrade -y",
       "apt-get install nginx --yes",
       "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync",
-      "sudo ufw deny ssh",
+      "sudo ufw enable",
+      "sudo ufw deny 22",
       "sudo ufw deny http"
     ],
     "inline_shebang": "/bin/sh -x",
