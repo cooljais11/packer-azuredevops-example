@@ -44,13 +44,13 @@
     "type": "shell"
   },
  {
+    "type": "shell",
+    "inline_shebang": "/bin/sh -x",
     "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
     "inline": [
-      "sudo ufw enable",
-      "sudo ufw deny 22",
-      "sudo ufw deny http"
-    ],
-    "inline_shebang": "/bin/sh -x",
-    "type": "shell"
+      "ufw enable",
+      "ufw deny 22",
+      "ufw deny http"
+    ]
   }]
 }
